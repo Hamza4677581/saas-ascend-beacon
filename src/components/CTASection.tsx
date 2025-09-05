@@ -13,7 +13,7 @@ const CTASection = () => {
           <div className="absolute top-4 right-4 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
           <div className="absolute bottom-4 left-4 w-24 h-24 bg-primary-glow/10 rounded-full blur-2xl" />
           
-          <CardContent className="relative z-10 p-12 text-center">
+          <CardContent className="relative z-10 p-12 text-center bg-black">
             <Badge variant="outline" className="border-primary/30 text-primary mb-6">
               Ready to Scale?
             </Badge>
