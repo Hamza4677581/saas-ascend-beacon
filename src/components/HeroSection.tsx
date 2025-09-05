@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Rocket, TrendingUp } from "lucide-react";
-import heroImage from "@/assets/hero-gtm.jpg";
+import dashboardImage from "@/assets/dashboard-hero.jpg";
 
 const HeroSection = () => {
   return (
@@ -65,8 +65,8 @@ const HeroSection = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-glow">
               <img 
-                src={heroImage} 
-                alt="GTM Agency Team" 
+                src={dashboardImage} 
+                alt="GTM Dashboard Analytics" 
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
