@@ -67,7 +67,7 @@ const CTASection = () => {
             </div>
             <div>
               <h3 className="font-semibold mb-2">Email Us</h3>
-              <p className="text-muted-foreground text-sm">hello@gtmagency.com</p>
+              <p className="text-muted-foreground text-sm">hamza@gtmaccelerators.co</p>
               <p className="text-muted-foreground text-sm">Response within 2 hours</p>
             </div>
           </div>
