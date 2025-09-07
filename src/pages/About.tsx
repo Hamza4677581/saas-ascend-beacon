@@ -230,6 +230,73 @@ const About = () => {
         </div>
       </section>
 
+      {/* Technology Expertise Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Technology Stack Expertise</h2>
+            <p className="text-xl text-muted-foreground mb-12">
+              Expert in selecting and implementing the right sales tech and mar tech solutions for optimal GTM performance
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="space-y-6">
+                <h3 className="text-2xl font-semibold text-primary">Sales Tech</h3>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">Salesforce</div>
+                    <div className="text-sm text-muted-foreground">CRM & Sales Automation</div>
+                  </div>
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">HubSpot</div>
+                    <div className="text-sm text-muted-foreground">Inbound Sales Platform</div>
+                  </div>
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">Clay</div>
+                    <div className="text-sm text-muted-foreground">Data Enrichment</div>
+                  </div>
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">Outreach</div>
+                    <div className="text-sm text-muted-foreground">Sales Engagement</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <h3 className="text-2xl font-semibold text-primary">Mar Tech & Intent</h3>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">6sense</div>
+                    <div className="text-sm text-muted-foreground">Intent Data Platform</div>
+                  </div>
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">ZoomInfo</div>
+                    <div className="text-sm text-muted-foreground">B2B Database</div>
+                  </div>
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">Marketo</div>
+                    <div className="text-sm text-muted-foreground">Marketing Automation</div>
+                  </div>
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">Pardot</div>
+                    <div className="text-sm text-muted-foreground">B2B Marketing</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-gradient-card rounded-xl p-8 border border-primary/20">
+              <h4 className="text-xl font-semibold mb-4">Strategic Technology Selection</h4>
+              <p className="text-muted-foreground">
+                I help you choose the right combination of tools for your specific business needs, ensuring seamless 
+                integration across your entire GTM stack. From lead generation to customer success, every tool is 
+                strategically selected to maximize ROI and operational efficiency.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Philosophy Section */}
       <section className="py-16">
         <div className="container mx-auto px-6 lg:px-8">

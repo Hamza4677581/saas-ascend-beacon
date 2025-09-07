@@ -24,7 +24,7 @@ const TrustedBySection = () => {
         </div>
         
         <div className="relative overflow-hidden">
-          <div className="flex animate-marquee">
+          <div className="flex animate-marquee-fast">
             {[...trustedLogos, ...trustedLogos].map((company, index) => (
               <div 
                 key={`${company.name}-${index}`}
