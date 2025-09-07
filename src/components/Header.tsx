@@ -6,7 +6,7 @@ const Header = () => {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <a href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <img 
               src="/lovable-uploads/130cdfb4-5ad5-49e7-9336-8ec96fb873f1.png" 
               alt="GTM Accelerators Logo" 
@@ -16,7 +16,7 @@ const Header = () => {
               <span className="text-lg font-bold text-foreground">GTM</span>
               <span className="text-xs text-muted-foreground -mt-1">ACCELERATORS</span>
             </div>
-          </div>
+          </a>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">

@@ -74,8 +74,11 @@ const ServicesSection = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => {
-            const serviceSlug = service.title.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and');
-            const servicePath = index < 2 ? `/services/${serviceSlug}` : '#';
+            const serviceSlug = service.title.toLowerCase()
+              .replace(/\s+/g, '-')
+              .replace(/&/g, 'and')
+              .replace(/'/g, '');
+            const servicePath = `/services/${serviceSlug}`;
             
             return (
               <Card 
