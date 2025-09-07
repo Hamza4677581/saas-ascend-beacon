@@ -35,7 +35,7 @@ const About = () => {
                   <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                     Hamza Maqsood
                     <span className="block bg-gradient-primary bg-clip-text text-transparent text-2xl md:text-3xl mt-2">
-                      GTM Architect | Global Sales leader | Team builder
+                      GTM Architect | Global Sales leader
                     </span>
                   </h1>
                   
