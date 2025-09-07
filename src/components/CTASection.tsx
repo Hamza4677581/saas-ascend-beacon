@@ -5,7 +5,7 @@ import { ArrowRight, Calendar, Mail, MessageSquare, Phone } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-24 bg-black">
+    <section id="contact" className="py-24 bg-black">
       <div className="container mx-auto px-6 lg:px-8">
         {/* Main CTA Card */}
         <Card className="relative overflow-hidden bg-gradient-hero border-primary/20 shadow-glow">

@@ -1,8 +1,33 @@
 import { Button } from "@/components/ui/button";
+import { 
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+import { ChevronDown } from "lucide-react";
+
+const services = [
+  { name: "Product Launch Strategy", href: "/services/product-launch-strategy" },
+  { name: "Customer Acquisition", href: "/services/customer-acquisition" },
+  { name: "Revenue Operations", href: "/services/revenue-operations" },
+  { name: "Market Expansion", href: "/services/market-expansion" },
+  { name: "Growth Acceleration", href: "/services/growth-acceleration" },
+  { name: "Metrics & Analytics", href: "/services/metrics-and-analytics" }
+];
+
+const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-primary/10">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -20,20 +45,56 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
-              Services
-            </a>
-            <a href="#benefits" className="text-muted-foreground hover:text-primary transition-colors">
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="bg-transparent hover:bg-primary/10">
+                    Services <ChevronDown className="ml-1 h-4 w-4" />
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="w-96 p-4">
+                      <div className="grid gap-3">
+                        {services.map((service) => (
+                          <NavigationMenuLink key={service.name} asChild>
+                            <a
+                              href={service.href}
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            >
+                              <div className="text-sm font-medium leading-none">{service.name}</div>
+                            </a>
+                          </NavigationMenuLink>
+                        ))}
+                      </div>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+            
+            <button 
+              onClick={() => scrollToSection('benefits')}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Benefits
+            </button>
+            
+            <a href="/case-studies" className="text-muted-foreground hover:text-foreground transition-colors">
+              Case Studies
             </a>
-            <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+            
+            <button 
+              onClick={() => scrollToSection('contact')}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Contact
-            </a>
+            </button>
           </nav>
 
           {/* CTA Button */}
-          <Button variant="hero" size="sm">
-            Book a Call
+          <Button variant="hero" size="sm" asChild>
+            <a href="https://calendly.com/hamzamaqsood334/30min" target="_blank" rel="noopener noreferrer">
+              Book Call
+            </a>
           </Button>
         </div>
       </div>
