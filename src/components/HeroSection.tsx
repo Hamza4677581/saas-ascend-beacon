@@ -35,12 +35,16 @@ const HeroSection = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="lg" className="group">
-                Start Your Growth Journey
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <Button variant="hero" size="lg" asChild className="group">
+                <a href="https://calendly.com/hamzamaqsood334/30min" target="_blank" rel="noopener noreferrer">
+                  Start Your Growth Journey
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="border-primary/20 hover:bg-primary/10">
-                View Case Studies
+              <Button variant="outline" size="lg" asChild className="border-primary/20 hover:bg-primary/10">
+                <a href="/case-studies">
+                  View Case Studies
+                </a>
               </Button>
             </div>
             

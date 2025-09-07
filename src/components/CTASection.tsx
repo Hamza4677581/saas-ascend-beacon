@@ -31,9 +31,11 @@ const CTASection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button variant="hero" size="lg" className="group">
-                Book Strategy Session
-                <Calendar className="ml-2 w-5 h-5 group-hover:scale-110 transition-transform" />
+              <Button variant="hero" size="lg" asChild className="group">
+                <a href="https://calendly.com/hamzamaqsood334/30min" target="_blank" rel="noopener noreferrer">
+                  Book Strategy Session
+                  <Calendar className="ml-2 w-5 h-5 group-hover:scale-110 transition-transform" />
+                </a>
               </Button>
               <Button variant="outline" size="lg" className="border-primary/20 hover:bg-primary/10">
                 Download GTM Guide

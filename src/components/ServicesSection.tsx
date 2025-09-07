@@ -73,11 +73,16 @@ const ServicesSection = () => {
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <Card 
-              key={service.title}
-              className="relative group hover:shadow-card transition-all duration-300 bg-gradient-card border-primary/10 hover:border-primary/20"
-            >
+          {services.map((service, index) => {
+            const serviceSlug = service.title.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and');
+            const servicePath = index < 2 ? `/services/${serviceSlug}` : '#';
+            
+            return (
+              <Card 
+                key={service.title}
+                className="relative group hover:shadow-card transition-all duration-300 bg-gradient-card border-primary/10 hover:border-primary/20 cursor-pointer"
+                onClick={() => window.location.href = servicePath}
+              >
               <CardHeader className="pb-4">
                 <div className="flex items-start justify-between mb-4">
                   <div className="p-3 bg-primary/10 rounded-xl group-hover:bg-primary/20 transition-colors">
@@ -107,7 +112,8 @@ const ServicesSection = () => {
               {/* Hover Effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-lg pointer-events-none" />
             </Card>
-          ))}
+            );
+          })}
         </div>
 
         {/* Bottom CTA */}
