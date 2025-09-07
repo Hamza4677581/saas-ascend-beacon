@@ -71,6 +71,10 @@ const Header = () => {
               </NavigationMenuList>
             </NavigationMenu>
             
+            <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+              About
+            </a>
+            
             <button 
               onClick={() => scrollToSection('benefits')}
               className="text-muted-foreground hover:text-foreground transition-colors"
