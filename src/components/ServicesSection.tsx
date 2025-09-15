@@ -14,39 +14,39 @@ import {
 const services = [
   {
     icon: Rocket,
-    title: "Product Launch Strategy",
-    description: "Complete go-to-market planning from positioning to launch execution, ensuring maximum market impact.",
-    features: ["Market Research", "Positioning", "Launch Planning", "Campaign Execution"]
+    title: "Done-for-You Multi-Channel Outbound",
+    description: "Triple your qualified demos in 45 days without hiring new SDRs. We reach your best buyers by email, LinkedIn, and cold calls.",
+    features: ["Personalized Outreach", "Multi-Channel Campaigns", "Lead Qualification", "Demo Booking"]
   },
   {
     icon: Target,
-    title: "Customer Acquisition",
-    description: "Build scalable customer acquisition engines with optimized funnels and conversion strategies.",
-    features: ["Lead Generation", "Funnel Optimization", "Conversion Rate Optimization", "A/B Testing"]
+    title: "End-to-End Clay Playbooks",
+    description: "Automated workflows that find, enrich, and score your best opportunities while you sleep. No more manual prospecting.",
+    features: ["Automated Prospecting", "Data Enrichment", "Lead Scoring", "Workflow Automation"]
   },
   {
     icon: BarChart3,
-    title: "Revenue Operations",
-    description: "Align sales, marketing, and customer success for predictable revenue growth and operational efficiency.",
-    features: ["Sales Process", "Pipeline Management", "Revenue Analytics", "Team Alignment"]
+    title: "GTM & RevOps Engineering",
+    description: "Clean, enrich, and sync data between Clay and your CRM. Keep your revenue engine running smoothly with automated systems.",
+    features: ["CRM Integration", "Data Standardization", "Pipeline Optimization", "System Automation"]
   },
   {
     icon: Users,
-    title: "Market Expansion",
-    description: "Scale into new markets, segments, and geographies with data-driven expansion strategies.",
-    features: ["Market Analysis", "Expansion Planning", "Localization", "Partnership Strategy"]
+    title: "C-Level Network Activation",
+    description: "Leverage our extensive C-level connections across Fortune 500 companies for warm introductions and strategic partnerships.",
+    features: ["Executive Introductions", "Strategic Partnerships", "Board Connections", "Investment Networks"]
   },
   {
     icon: Zap,
-    title: "Growth Acceleration",
-    description: "Identify and optimize growth levers to accelerate your SaaS business beyond linear growth.",
-    features: ["Growth Hacking", "Viral Mechanics", "Product-Led Growth", "Retention Optimization"]
+    title: "AI-Powered Sales Acceleration",
+    description: "Use advanced AI to write personalized outreach at scale and identify the highest-value prospects automatically.",
+    features: ["AI Messaging", "Prospect Intelligence", "Predictive Analytics", "Automated Follow-ups"]
   },
   {
     icon: TrendingUp,
-    title: "Metrics & Analytics",
-    description: "Implement comprehensive measurement frameworks to track and optimize your GTM performance.",
-    features: ["KPI Dashboards", "Attribution Modeling", "Cohort Analysis", "Predictive Analytics"]
+    title: "Revenue Growth Consulting",
+    description: "Strategic consulting to build scalable revenue systems that outperform traditional SDR teams by 300%+.",
+    features: ["Growth Strategy", "Team Optimization", "Process Design", "Performance Tracking"]
   }
 ];
 
