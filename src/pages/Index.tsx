@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import TrustedBySection from "@/components/TrustedBySection";
 import ServicesSection from "@/components/ServicesSection";
 import BenefitsSection from "@/components/BenefitsSection";
+import ComparisonSection from "@/components/ComparisonSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
@@ -13,6 +14,7 @@ const Index = () => {
       <HeroSection />
       <TrustedBySection />
       <ServicesSection />
+      <ComparisonSection />
       <BenefitsSection />
       
       {/* C-Level Connections Section */}
