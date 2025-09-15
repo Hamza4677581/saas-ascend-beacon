@@ -136,8 +136,10 @@ const CaseStudies = () => {
                       </div>
 
                       <div className="mt-8 pt-6 border-t border-primary/10">
-                        <Button variant="outline" className="w-full">
-                          Read Full Case Study
+                        <Button variant="outline" asChild className="w-full">
+                          <a href="https://calendly.com/hamzamaqsood334/30min" target="_blank" rel="noopener noreferrer">
+                            Book Free Strategy Call
+                          </a>
                         </Button>
                       </div>
                     </div>

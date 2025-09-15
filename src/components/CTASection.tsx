@@ -37,9 +37,11 @@ const CTASection = () => {
                   <Calendar className="ml-2 w-5 h-5 group-hover:scale-110 transition-transform" />
                 </a>
               </Button>
-              <Button variant="outline" size="lg" className="border-primary/20 hover:bg-primary/10">
-                Download GTM Guide
-                <ArrowRight className="ml-2 w-5 h-5" />
+              <Button variant="outline" size="lg" asChild className="border-primary/20 hover:bg-primary/10">
+                <a href="/services" target="_blank" rel="noopener noreferrer">
+                  View Our Services
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </a>
               </Button>
             </div>
             
@@ -63,7 +65,7 @@ const CTASection = () => {
         
         {/* Contact Information */}
         <div className="grid md:grid-cols-3 gap-8 mt-16">
-          <div className="text-center space-y-4">
+          <div className="text-center space-y-4 cursor-pointer" onClick={() => window.location.href = 'mailto:hamza@gtmaccelerators.co'}>
             <div className="p-4 bg-primary/10 rounded-xl w-fit mx-auto">
               <Mail className="w-6 h-6 text-primary" />
             </div>
@@ -74,7 +76,7 @@ const CTASection = () => {
             </div>
           </div>
           
-          <div className="text-center space-y-4">
+          <div className="text-center space-y-4 cursor-pointer" onClick={() => window.open('https://calendly.com/hamzamaqsood334/30min', '_blank')}>
             <div className="p-4 bg-primary/10 rounded-xl w-fit mx-auto">
               <Calendar className="w-6 h-6 text-primary" />
             </div>
@@ -85,7 +87,7 @@ const CTASection = () => {
             </div>
           </div>
           
-          <div className="text-center space-y-4">
+          <div className="text-center space-y-4 cursor-pointer" onClick={() => window.open('https://calendly.com/hamzamaqsood334/30min', '_blank')}>
             <div className="p-4 bg-primary/10 rounded-xl w-fit mx-auto">
               <MessageSquare className="w-6 h-6 text-primary" />
             </div>
