@@ -10,12 +10,12 @@ import {
 import { ChevronDown } from "lucide-react";
 
 const services = [
-  { name: "Product Launch Strategy", href: "/services/product-launch-strategy" },
-  { name: "Customer Acquisition", href: "/services/customer-acquisition" },
-  { name: "Revenue Operations", href: "/services/revenue-operations" },
-  { name: "Market Expansion", href: "/services/market-expansion" },
-  { name: "Growth Acceleration", href: "/services/growth-acceleration" },
-  { name: "Metrics & Analytics", href: "/services/metrics-and-analytics" }
+  { name: "Done-for-You Multi-Channel Outbound", href: "/services/done-for-you-outbound" },
+  { name: "End-to-End Clay Playbooks", href: "/services/clay-playbooks" },
+  { name: "GTM & RevOps Engineering", href: "/services/gtm-revops-engineering" },
+  { name: "C-Level Network Activation", href: "/services/c-level-network-activation" },
+  { name: "AI-Powered Sales Acceleration", href: "/services/ai-powered-sales-acceleration" },
+  { name: "Revenue Growth Consulting", href: "/services/revenue-growth-consulting" }
 ];
 
 const scrollToSection = (sectionId: string) => {

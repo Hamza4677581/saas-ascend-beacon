@@ -6,12 +6,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
-import ProductLaunchStrategy from "./pages/services/ProductLaunchStrategy";
-import CustomerAcquisition from "./pages/services/CustomerAcquisition";
-import RevenueOperations from "./pages/services/RevenueOperations";
-import MarketExpansion from "./pages/services/MarketExpansion";
-import GrowthAcceleration from "./pages/services/GrowthAcceleration";
-import MetricsAnalytics from "./pages/services/MetricsAnalytics";
+import DoneForYouOutbound from "./pages/services/DoneForYouOutbound";
+import ClayPlaybooks from "./pages/services/ClayPlaybooks";
+import GTMRevOpsEngineering from "./pages/services/GTMRevOpsEngineering";
+import CLevelNetworkActivation from "./pages/services/CLevelNetworkActivation";
+import AIPoweredSalesAcceleration from "./pages/services/AIPoweredSalesAcceleration";
+import RevenueGrowthConsulting from "./pages/services/RevenueGrowthConsulting";
 import CaseStudies from "./pages/CaseStudies";
 
 const queryClient = new QueryClient();
@@ -25,12 +25,12 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services/product-launch-strategy" element={<ProductLaunchStrategy />} />
-          <Route path="/services/customer-acquisition" element={<CustomerAcquisition />} />
-          <Route path="/services/revenue-operations" element={<RevenueOperations />} />
-          <Route path="/services/market-expansion" element={<MarketExpansion />} />
-          <Route path="/services/growth-acceleration" element={<GrowthAcceleration />} />
-          <Route path="/services/metrics-and-analytics" element={<MetricsAnalytics />} />
+          <Route path="/services/done-for-you-outbound" element={<DoneForYouOutbound />} />
+          <Route path="/services/clay-playbooks" element={<ClayPlaybooks />} />
+          <Route path="/services/gtm-revops-engineering" element={<GTMRevOpsEngineering />} />
+          <Route path="/services/c-level-network-activation" element={<CLevelNetworkActivation />} />
+          <Route path="/services/ai-powered-sales-acceleration" element={<AIPoweredSalesAcceleration />} />
+          <Route path="/services/revenue-growth-consulting" element={<RevenueGrowthConsulting />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
