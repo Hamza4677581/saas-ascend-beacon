@@ -158,7 +158,7 @@ const ComparisonSection = () => {
               <Button 
                 size="lg" 
                 className="w-full bg-gradient-primary text-white"
-                onClick={() => window.location.href = '/services/customer-acquisition'}
+                onClick={() => window.open('https://calendly.com/hamzamaqsood334/30min', '_blank')}
               >
                 Start Your 45-Day Transformation
               </Button>
@@ -166,9 +166,9 @@ const ComparisonSection = () => {
                 variant="outline" 
                 size="lg" 
                 className="w-full"
-                onClick={() => window.location.href = '/case-studies'}
+                onClick={() => window.open('https://calendly.com/hamzamaqsood334/30min', '_blank')}
               >
-                View Success Stories
+                Book Strategy Call
               </Button>
             </div>
           </div>
@@ -194,16 +194,16 @@ const ComparisonSection = () => {
               <Button 
                 size="lg" 
                 className="bg-gradient-primary text-white"
-                onClick={() => window.open('https://calendly.com/your-calendar', '_blank')}
+                onClick={() => window.open('https://calendly.com/hamzamaqsood334/30min', '_blank')}
               >
                 Book Discovery Call
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
-                onClick={() => window.location.href = '/services'}
+                onClick={() => window.open('https://calendly.com/hamzamaqsood334/30min', '_blank')}
               >
-                View All Services
+                Book Free Consultation
               </Button>
             </div>
             <p className="text-sm text-muted-foreground mt-4">
