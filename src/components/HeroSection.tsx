@@ -20,16 +20,21 @@ const HeroSection = () => {
                 Launch & Scale Faster
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Go-to-Market
-                <span className="block bg-gradient-primary bg-clip-text text-transparent">
-                  Excellence
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                <span className="bg-gradient-primary bg-clip-text text-transparent">
+                  GTM Excellence
                 </span>
-                for SaaS, AI, B2B & Tech
+                <span className="block text-foreground mt-2">
+                  for SaaS, AI, B2B & Tech
+                </span>
               </h1>
               
-              <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
-                Proven GTM strategies that transform companies into market leaders.
+              <p className="text-lg md:text-xl text-muted-foreground/90 max-w-xl pt-2">
+                Build scalable revenue engines that outperform traditional sales teams by 300%+
+              </p>
+              
+              <p className="text-base text-muted-foreground max-w-xl">
+                From strategy to execution, we deliver proven systems that transform companies into market leaders.
               </p>
             </div>
             
