@@ -29,8 +29,7 @@ const HeroSection = () => {
               </h1>
               
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
-                We accelerate SaaS growth with proven GTM strategies, from product-market fit to scalable revenue engines. 
-                Transform your startup into a market leader.
+                We accelerate growth for SaaS, AI, B2B, and tech companies with proven GTM strategies, from product-market fit to scalable revenue engines. Transform your company into a market leader.
               </p>
             </div>
             
