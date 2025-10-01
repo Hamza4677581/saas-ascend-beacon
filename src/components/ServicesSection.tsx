@@ -16,37 +16,43 @@ const services = [
     icon: Rocket,
     title: "Done-for-You Multi-Channel Outbound",
     description: "Triple your qualified demos in 45 days without hiring new SDRs. We reach your best buyers by email, LinkedIn, and cold calls.",
-    features: ["Personalized Outreach", "Multi-Channel Campaigns", "Lead Qualification", "Demo Booking"]
+    features: ["Personalized Outreach", "Multi-Channel Campaigns", "Lead Qualification", "Demo Booking"],
+    path: "/services/done-for-you-outbound"
   },
   {
     icon: Target,
     title: "End-to-End Clay Playbooks",
     description: "Automated workflows that find, enrich, and score your best opportunities while you sleep. No more manual prospecting.",
-    features: ["Automated Prospecting", "Data Enrichment", "Lead Scoring", "Workflow Automation"]
+    features: ["Automated Prospecting", "Data Enrichment", "Lead Scoring", "Workflow Automation"],
+    path: "/services/clay-playbooks"
   },
   {
     icon: BarChart3,
     title: "GTM & RevOps Engineering",
     description: "Clean, enrich, and sync data between Clay and your CRM. Keep your revenue engine running smoothly with automated systems.",
-    features: ["CRM Integration", "Data Standardization", "Pipeline Optimization", "System Automation"]
+    features: ["CRM Integration", "Data Standardization", "Pipeline Optimization", "System Automation"],
+    path: "/services/gtm-revops-engineering"
   },
   {
     icon: Users,
     title: "C-Level Network Activation",
     description: "Leverage our extensive C-level connections across Fortune 500 companies for warm introductions and strategic partnerships.",
-    features: ["Executive Introductions", "Strategic Partnerships", "Board Connections", "Investment Networks"]
+    features: ["Executive Introductions", "Strategic Partnerships", "Board Connections", "Investment Networks"],
+    path: "/services/c-level-network-activation"
   },
   {
     icon: Zap,
     title: "AI-Powered Sales Acceleration",
     description: "Use advanced AI to write personalized outreach at scale and identify the highest-value prospects automatically.",
-    features: ["AI Messaging", "Prospect Intelligence", "Predictive Analytics", "Automated Follow-ups"]
+    features: ["AI Messaging", "Prospect Intelligence", "Predictive Analytics", "Automated Follow-ups"],
+    path: "/services/ai-powered-sales-acceleration"
   },
   {
     icon: TrendingUp,
     title: "Revenue Growth Consulting",
     description: "Strategic consulting to build scalable revenue systems that outperform traditional SDR teams by 300%+.",
-    features: ["Growth Strategy", "Team Optimization", "Process Design", "Performance Tracking"]
+    features: ["Growth Strategy", "Team Optimization", "Process Design", "Performance Tracking"],
+    path: "/services/revenue-growth-consulting"
   }
 ];
 
@@ -74,17 +80,11 @@ const ServicesSection = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => {
-            const serviceSlug = service.title.toLowerCase()
-              .replace(/\s+/g, '-')
-              .replace(/&/g, 'and')
-              .replace(/'/g, '');
-            const servicePath = `/services/${serviceSlug}`;
-            
             return (
               <Card 
                 key={service.title}
                 className="relative group hover:shadow-card transition-all duration-300 bg-gradient-card border-primary/10 hover:border-primary/20 cursor-pointer"
-                onClick={() => window.location.href = servicePath}
+                onClick={() => window.location.href = service.path}
               >
               <CardHeader className="pb-4">
                 <div className="flex items-start justify-between mb-4">

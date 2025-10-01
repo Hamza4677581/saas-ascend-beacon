@@ -25,7 +25,7 @@ const HeroSection = () => {
                 <span className="block bg-gradient-primary bg-clip-text text-transparent">
                   Excellence
                 </span>
-                for SaaS Startups
+                for SaaS, AI, B2B & Tech Companies
               </h1>
               
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">

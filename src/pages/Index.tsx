@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TrustedBySection from "@/components/TrustedBySection";
+import ExpertiseSection from "@/components/ExpertiseSection";
 import ServicesSection from "@/components/ServicesSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import ComparisonSection from "@/components/ComparisonSection";
@@ -12,8 +13,9 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <HeroSection />
-      <ComparisonSection />
       <TrustedBySection />
+      <ExpertiseSection />
+      <ComparisonSection />
       <ServicesSection />
       <BenefitsSection />
       
@@ -27,6 +29,27 @@ const Index = () => {
             </p>
             
             <div className="space-y-12">
+              {/* Technology & SaaS */}
+              <div>
+                <h3 className="text-xl font-semibold text-primary mb-6">Technology & SaaS</h3>
+                <div className="overflow-hidden">
+                  <div className="flex animate-marquee-fast space-x-4">
+                    {[
+                      "Microsoft", "Google", "Amazon", "Salesforce", "Oracle", "SAP",
+                      "Adobe", "IBM", "ServiceNow", "Workday", "Snowflake", "HubSpot",
+                      "Atlassian", "Zoom", "Slack", "Dropbox", "Box", "Twilio"
+                    ].concat([
+                      "Microsoft", "Google", "Amazon", "Salesforce", "Oracle", "SAP",
+                      "Adobe", "IBM", "ServiceNow", "Workday", "Snowflake", "HubSpot"
+                    ]).map((company, index) => (
+                      <div key={`${company}-${index}`} className="flex-shrink-0 p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300 min-w-[200px]">
+                        <div className="text-sm font-medium text-center">{company}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
               {/* FMCG Companies */}
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-6">FMCG & Consumer Goods</h3>
@@ -145,6 +168,44 @@ const Index = () => {
                 </div>
               </div>
 
+              {/* Telecommunications & Media */}
+              <div>
+                <h3 className="text-xl font-semibold text-primary mb-6">Telecommunications & Media</h3>
+                <div className="overflow-hidden">
+                  <div className="flex animate-[scroll-left_35s_linear_infinite] space-x-4">
+                    {[
+                      "Verizon", "AT&T", "T-Mobile", "Comcast", "Charter Communications", "Vodafone",
+                      "Orange", "Telefónica", "Deutsche Telekom", "BT Group", "Netflix", "Disney"
+                    ].concat([
+                      "Verizon", "AT&T", "T-Mobile", "Comcast", "Charter Communications", "Vodafone"
+                    ]).map((company, index) => (
+                      <div key={`${company}-${index}`} className="flex-shrink-0 p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300 min-w-[200px]">
+                        <div className="text-sm font-medium text-center">{company}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Retail & E-commerce */}
+              <div>
+                <h3 className="text-xl font-semibold text-primary mb-6">Retail & E-commerce</h3>
+                <div className="overflow-hidden">
+                  <div className="flex animate-[scroll-right_30s_linear_infinite] space-x-4">
+                    {[
+                      "Walmart", "Amazon", "Costco", "Target", "Home Depot", "Kroger",
+                      "Alibaba", "JD.com", "Tesco", "Carrefour", "IKEA", "Best Buy"
+                    ].concat([
+                      "Walmart", "Amazon", "Costco", "Target", "Home Depot", "Kroger"
+                    ]).map((company, index) => (
+                      <div key={`${company}-${index}`} className="flex-shrink-0 p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300 min-w-[200px]">
+                        <div className="text-sm font-medium text-center">{company}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
               {/* Real Estate & Power */}
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
@@ -180,6 +241,25 @@ const Index = () => {
                         </div>
                       ))}
                     </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Manufacturing & Automotive */}
+              <div>
+                <h3 className="text-xl font-semibold text-primary mb-6">Manufacturing & Automotive</h3>
+                <div className="overflow-hidden">
+                  <div className="flex animate-marquee-fast space-x-4">
+                    {[
+                      "Toyota", "Volkswagen", "General Motors", "Ford", "Tesla", "BMW",
+                      "Mercedes-Benz", "Honda", "Nissan", "Siemens", "GE", "3M"
+                    ].concat([
+                      "Toyota", "Volkswagen", "General Motors", "Ford", "Tesla", "BMW"
+                    ]).map((company, index) => (
+                      <div key={`${company}-${index}`} className="flex-shrink-0 p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300 min-w-[200px]">
+                        <div className="text-sm font-medium text-center">{company}</div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
