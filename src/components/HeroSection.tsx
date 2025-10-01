@@ -20,16 +20,16 @@ const HeroSection = () => {
                 Launch & Scale Faster
               </div>
               
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Go-to-Market
                 <span className="block bg-gradient-primary bg-clip-text text-transparent">
                   Excellence
                 </span>
-                for SaaS, AI, B2B & Tech Companies
+                for SaaS, AI, B2B & Tech
               </h1>
               
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
-                We accelerate growth for SaaS, AI, B2B, and tech companies with proven GTM strategies, from product-market fit to scalable revenue engines. Transform your company into a market leader.
+              <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
+                Proven GTM strategies that transform companies into market leaders.
               </p>
             </div>
             
@@ -48,24 +48,24 @@ const HeroSection = () => {
             </div>
             
             {/* Stats */}
-            <div className="flex flex-wrap gap-8 justify-center lg:justify-start pt-8">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary">300%</div>
-                <div className="text-sm text-muted-foreground">Avg Revenue Growth</div>
+            <div className="flex flex-wrap gap-6 lg:gap-8 justify-center lg:justify-start pt-6">
+              <div className="text-center lg:text-left">
+                <div className="text-2xl md:text-3xl font-bold text-primary">300%</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Avg Growth</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary">90%</div>
-                <div className="text-sm text-muted-foreground">Client Retention</div>
+              <div className="text-center lg:text-left">
+                <div className="text-2xl md:text-3xl font-bold text-primary">90%</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Retention</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary">50+</div>
-                <div className="text-sm text-muted-foreground">SaaS Success Stories</div>
+              <div className="text-center lg:text-left">
+                <div className="text-2xl md:text-3xl font-bold text-primary">50+</div>
+                <div className="text-xs md:text-sm text-muted-foreground">Success Stories</div>
               </div>
             </div>
           </div>
           
           {/* Image */}
-          <div className="relative">
+          <div className="relative lg:mt-0">
             <div className="relative rounded-2xl overflow-hidden shadow-glow">
               <img 
                 src={dashboardImage} 
@@ -76,14 +76,14 @@ const HeroSection = () => {
             </div>
             
             {/* Floating Stats Card */}
-            <div className="absolute -bottom-6 -left-6 bg-gradient-card border border-primary/20 rounded-xl p-6 shadow-card backdrop-blur-sm">
+            <div className="absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 bg-gradient-card border border-primary/20 rounded-xl p-4 lg:p-6 shadow-card backdrop-blur-sm">
               <div className="flex items-center gap-3">
                 <div className="p-2 bg-primary/20 rounded-lg">
-                  <TrendingUp className="w-6 h-6 text-primary" />
+                  <TrendingUp className="w-5 h-5 lg:w-6 lg:h-6 text-primary" />
                 </div>
                 <div>
-                  <div className="text-lg font-bold">$50M+</div>
-                  <div className="text-sm text-muted-foreground">Revenue Generated</div>
+                  <div className="text-base lg:text-lg font-bold">$50M+</div>
+                  <div className="text-xs lg:text-sm text-muted-foreground">Revenue Generated</div>
                 </div>
               </div>
             </div>
