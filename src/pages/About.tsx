@@ -35,13 +35,14 @@ const About = () => {
                   <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                     Hamza Maqsood
                     <span className="block bg-gradient-primary bg-clip-text text-transparent text-2xl md:text-3xl mt-2">
-                      GTM Architect | Global Sales leader
+                      GTM ARCHITECT | TECHNOLOGY ADVISOR | AUTOMATION EXPERT
                     </span>
                   </h1>
                   
                   <p className="text-xl text-muted-foreground">
-                    With 7+ years of proven expertise in B2B SaaS and business scaling, I've helped companies 
-                    transform from startup ideas to million-dollar recurring revenue engines.
+                    Specialized in scaling B2B startups in the AI and Vertical SaaS space through intelligent automation 
+                    and revenue engineering. Transformed 50+ companies from early-stage to million-dollar ARR with proven 
+                    GTM systems and cutting-edge automation strategies that eliminate growth bottlenecks.
                   </p>
                 </div>
 
@@ -239,10 +240,10 @@ const About = () => {
               Expert in selecting and implementing the right sales tech and mar tech solutions for optimal GTM performance
             </p>
             
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="space-y-6">
                 <h3 className="text-2xl font-semibold text-primary">Sales Tech</h3>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid gap-4">
                   <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
                     <div className="text-lg font-semibold mb-2">Salesforce</div>
                     <div className="text-sm text-muted-foreground">CRM & Sales Automation</div>
@@ -259,12 +260,50 @@ const About = () => {
                     <div className="text-lg font-semibold mb-2">Outreach</div>
                     <div className="text-sm text-muted-foreground">Sales Engagement</div>
                   </div>
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">Attio</div>
+                    <div className="text-sm text-muted-foreground">Modern CRM</div>
+                  </div>
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">Apollo</div>
+                    <div className="text-sm text-muted-foreground">Sales Intelligence</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <h3 className="text-2xl font-semibold text-primary">Automation</h3>
+                <div className="grid gap-4">
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">Make</div>
+                    <div className="text-sm text-muted-foreground">Workflow Automation</div>
+                  </div>
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">Zapier</div>
+                    <div className="text-sm text-muted-foreground">App Integration</div>
+                  </div>
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">n8n</div>
+                    <div className="text-sm text-muted-foreground">Advanced Automation</div>
+                  </div>
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">GoHighLevel</div>
+                    <div className="text-sm text-muted-foreground">All-in-One Platform</div>
+                  </div>
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">Notion</div>
+                    <div className="text-sm text-muted-foreground">Workspace Automation</div>
+                  </div>
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">Airtable</div>
+                    <div className="text-sm text-muted-foreground">Database Automation</div>
+                  </div>
                 </div>
               </div>
               
               <div className="space-y-6">
                 <h3 className="text-2xl font-semibold text-primary">Mar Tech & Intent</h3>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid gap-4">
                   <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
                     <div className="text-lg font-semibold mb-2">6sense</div>
                     <div className="text-sm text-muted-foreground">Intent Data Platform</div>
@@ -280,6 +319,14 @@ const About = () => {
                   <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
                     <div className="text-lg font-semibold mb-2">Pardot</div>
                     <div className="text-sm text-muted-foreground">B2B Marketing</div>
+                  </div>
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">Customer.io</div>
+                    <div className="text-sm text-muted-foreground">Customer Messaging</div>
+                  </div>
+                  <div className="p-4 bg-gradient-card rounded-lg border border-primary/10 hover:shadow-card transition-all duration-300">
+                    <div className="text-lg font-semibold mb-2">Segment</div>
+                    <div className="text-sm text-muted-foreground">Customer Data Platform</div>
                   </div>
                 </div>
               </div>
