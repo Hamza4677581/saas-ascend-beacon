@@ -7,6 +7,14 @@ import BenefitsSection from "@/components/BenefitsSection";
 import ComparisonSection from "@/components/ComparisonSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import salesAssistLogo from "@/assets/logos/salesassist.png";
+import rstechLogo from "@/assets/logos/rstech.png";
+import taloflowLogo from "@/assets/logos/taloflow.png";
+import cloudflowLogo from "@/assets/logos/cloudflow.png";
+import datasyncLogo from "@/assets/logos/datasync.png";
+import secureguardLogo from "@/assets/logos/secureguard.png";
+import workflowLogo from "@/assets/logos/workflow.png";
+import insightiqLogo from "@/assets/logos/insightiq.png";
 
 const Index = () => {
   return (
@@ -27,6 +35,34 @@ const Index = () => {
             <p className="text-xl text-muted-foreground mb-12">
               Established relationships and meeting opportunities across Fortune 500 companies and industry leaders
             </p>
+            
+            {/* Portfolio Companies Showcase */}
+            <div className="mb-16">
+              <h3 className="text-xl font-semibold text-primary mb-8">Our Portfolio Companies</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-8">
+                {[
+                  { name: "SalesAssist", logo: salesAssistLogo },
+                  { name: "RS Tech Studio", logo: rstechLogo },
+                  { name: "Taloflow", logo: taloflowLogo },
+                  { name: "CloudFlow SaaS", logo: cloudflowLogo },
+                  { name: "DataSync Analytics", logo: datasyncLogo },
+                  { name: "SecureGuard Enterprise", logo: secureguardLogo },
+                  { name: "WorkFlow Automation Co", logo: workflowLogo },
+                  { name: "InsightIQ Platform", logo: insightiqLogo },
+                ].map((company) => (
+                  <div 
+                    key={company.name}
+                    className="p-6 bg-gradient-card rounded-xl border border-primary/20 hover:shadow-card transition-all duration-300 flex items-center justify-center"
+                  >
+                    <img 
+                      src={company.logo} 
+                      alt={company.name}
+                      className="h-16 w-auto object-contain hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
             
             <div className="space-y-12">
               {/* Technology & SaaS */}
