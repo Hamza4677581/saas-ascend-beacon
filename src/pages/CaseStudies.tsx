@@ -8,43 +8,43 @@ import { TrendingUp, ArrowRight, Users, DollarSign, Clock, Target } from "lucide
 const CaseStudies = () => {
   const caseStudies = [
     {
-      company: "CloudFlow SaaS",
-      industry: "Project Management",
-      challenge: "Struggling to achieve product-market fit with low user adoption and high churn rates.",
-      solution: "Complete GTM overhaul including positioning, pricing strategy, and customer acquisition optimization.",
+      company: "SalesAssist",
+      industry: "Secondary Sales Solution",
+      challenge: "CPG, FMCG, Pharma, and Retail companies needed to cover their Total Addressable Market efficiently and secure Fortune 500 clients.",
+      solution: "Implemented comprehensive GTM strategy with targeted outbound campaigns and strategic positioning to reach enterprise decision-makers.",
       results: [
-        { metric: "400%", description: "Increase in MRR" },
-        { metric: "65%", description: "Reduction in churn rate" },
-        { metric: "3.2x", description: "Faster sales cycle" }
+        { metric: "300+", description: "Qualified meetings booked" },
+        { metric: "Fortune 500", description: "Client acquisitions" },
+        { metric: "100%", description: "TAM coverage in 1 year" }
       ],
-      timeline: "6 months",
-      logo: "CF"
+      timeline: "1 year",
+      logo: "SA"
     },
     {
-      company: "DataSync Pro",
-      industry: "Data Analytics",
-      challenge: "Low conversion rates and difficulty scaling customer acquisition beyond initial early adopters.",
-      solution: "Implemented product-led growth strategy with optimized onboarding and viral referral program.",
+      company: "RS Tech Studio",
+      industry: "Technology Services",
+      challenge: "Staff augmentation and development firm specialized in web, mobile, Gen AI, and LLM needed to break into Fortune 500 and government sectors.",
+      solution: "Developed enterprise-focused GTM strategy with targeted account-based marketing and thought leadership positioning in emerging AI technologies.",
       results: [
-        { metric: "850%", description: "Growth in trial signups" },
-        { metric: "45%", description: "Improvement in trial-to-paid conversion" },
-        { metric: "$2.1M", description: "ARR achieved in 12 months" }
+        { metric: "200+", description: "Strategic meetings secured" },
+        { metric: "Fortune 500", description: "& Government clients" },
+        { metric: "2x", description: "Revenue growth achieved" }
       ],
-      timeline: "8 months",
-      logo: "DS"
+      timeline: "2 years",
+      logo: "RS"
     },
     {
-      company: "SecureConnect",
-      industry: "Cybersecurity",
-      challenge: "Entering a competitive market with limited brand recognition and long sales cycles.",
-      solution: "Developed thought leadership content strategy and account-based marketing for enterprise clients.",
+      company: "Taloflow",
+      industry: "Tech Vendor Evaluation",
+      challenge: "Y Combinator-backed startup needed to establish credibility with consulting firms, enterprises, and PE firms for tech vendor evaluation services.",
+      solution: "Strategic positioning and outbound campaign targeting Big Four consulting firms and enterprise decision-makers across multiple categories.",
       results: [
-        { metric: "320%", description: "Increase in qualified leads" },
-        { metric: "55%", description: "Shorter sales cycle" },
-        { metric: "$5.8M", description: "Series A funding raised" }
+        { metric: "200+", description: "High-value meetings" },
+        { metric: "Big Four", description: "Consulting firms onboarded" },
+        { metric: "Multiple", description: "Enterprise PE clients" }
       ],
-      timeline: "10 months",
-      logo: "SC"
+      timeline: "18 months",
+      logo: "TF"
     }
   ];
 
