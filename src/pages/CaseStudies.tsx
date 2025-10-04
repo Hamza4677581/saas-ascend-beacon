@@ -45,6 +45,71 @@ const CaseStudies = () => {
       ],
       timeline: "18 months",
       logo: "TF"
+    },
+    {
+      company: "CloudFlow SaaS",
+      industry: "Project Management Software",
+      challenge: "Early-stage SaaS struggling with product-market fit, low conversion rates, and limited brand awareness in a crowded market.",
+      solution: "Complete GTM transformation with refined positioning, optimized pricing strategy, and data-driven customer acquisition funnel.",
+      results: [
+        { metric: "450%", description: "Growth in MRR" },
+        { metric: "180+", description: "Enterprise meetings booked" },
+        { metric: "65%", description: "Improvement in conversion rate" }
+      ],
+      timeline: "9 months",
+      logo: "CF"
+    },
+    {
+      company: "DataSync Analytics",
+      industry: "Business Intelligence Platform",
+      challenge: "Difficulty scaling beyond early adopters, long sales cycles, and inconsistent revenue growth in the competitive BI space.",
+      solution: "Implemented product-led growth strategy with strategic content marketing and automated demo funnel to accelerate pipeline velocity.",
+      results: [
+        { metric: "$3.2M", description: "ARR achieved" },
+        { metric: "150+", description: "Demo requests monthly" },
+        { metric: "40%", description: "Shorter sales cycle" }
+      ],
+      timeline: "14 months",
+      logo: "DA"
+    },
+    {
+      company: "SecureGuard Enterprise",
+      industry: "Cybersecurity Solutions",
+      challenge: "New entrant in enterprise cybersecurity market needed to build credibility and break into Fortune 1000 accounts with complex buying processes.",
+      solution: "Developed account-based marketing strategy with executive-level thought leadership and strategic partnership ecosystem to accelerate trust-building.",
+      results: [
+        { metric: "Fortune 1000", description: "Clients secured" },
+        { metric: "250+", description: "C-level meetings" },
+        { metric: "$6.5M", description: "Series A funding raised" }
+      ],
+      timeline: "16 months",
+      logo: "SG"
+    },
+    {
+      company: "WorkFlow Automation Co",
+      industry: "Process Automation",
+      challenge: "Mid-market SaaS with strong product but struggling to expand upmarket and compete against established enterprise automation players.",
+      solution: "Repositioned for enterprise market with vertical-specific GTM playbooks and strategic partnerships to accelerate enterprise sales motion.",
+      results: [
+        { metric: "320%", description: "Enterprise revenue growth" },
+        { metric: "175+", description: "Enterprise accounts" },
+        { metric: "3.5x", description: "Average deal size increase" }
+      ],
+      timeline: "12 months",
+      logo: "WA"
+    },
+    {
+      company: "InsightIQ Platform",
+      industry: "Customer Analytics",
+      challenge: "Technical product with poor market positioning and difficulty articulating value to non-technical buyers, resulting in slow growth.",
+      solution: "Complete messaging overhaul with business-outcome focused positioning and created scalable demand generation engine.",
+      results: [
+        { metric: "550%", description: "Qualified pipeline growth" },
+        { metric: "220+", description: "Strategic meetings" },
+        { metric: "85%", description: "Increase in win rate" }
+      ],
+      timeline: "10 months",
+      logo: "IQ"
     }
   ];
 
