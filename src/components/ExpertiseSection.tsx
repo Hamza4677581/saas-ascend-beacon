@@ -1,22 +1,13 @@
-import salesAssistLogo from "@/assets/logos/salesassist.png";
-import rstechLogo from "@/assets/logos/rstech.png";
-import taloflowLogo from "@/assets/logos/taloflow.png";
-import cloudflowLogo from "@/assets/logos/cloudflow.png";
-import datasyncLogo from "@/assets/logos/datasync.png";
-import secureguardLogo from "@/assets/logos/secureguard.png";
-import workflowLogo from "@/assets/logos/workflow.png";
-import insightiqLogo from "@/assets/logos/insightiq.png";
-
 const ExpertiseSection = () => {
   const portfolioCompanies = [
-    { name: "SalesAssist", logo: salesAssistLogo },
-    { name: "RS Tech Studio", logo: rstechLogo },
-    { name: "Taloflow", logo: taloflowLogo },
-    { name: "CloudFlow SaaS", logo: cloudflowLogo },
-    { name: "DataSync Analytics", logo: datasyncLogo },
-    { name: "SecureGuard Enterprise", logo: secureguardLogo },
-    { name: "WorkFlow Automation Co", logo: workflowLogo },
-    { name: "InsightIQ Platform", logo: insightiqLogo },
+    "SalesAssist",
+    "RS Tech Studio",
+    "Taloflow",
+    "CloudFlow SaaS",
+    "DataSync Analytics",
+    "SecureGuard Enterprise",
+    "WorkFlow Automation Co",
+    "InsightIQ Platform",
   ];
 
   return (
@@ -35,14 +26,12 @@ const ExpertiseSection = () => {
           <div className="flex animate-marquee space-x-8">
             {[...portfolioCompanies, ...portfolioCompanies, ...portfolioCompanies].map((company, index) => (
               <div 
-                key={`${company.name}-${index}`}
+                key={`${company}-${index}`}
                 className="flex-shrink-0 flex items-center justify-center h-20 min-w-[180px] bg-gradient-card rounded-lg border border-primary/20 px-6 hover:shadow-card transition-all duration-300"
               >
-                <img 
-                  src={company.logo} 
-                  alt={company.name}
-                  className="h-14 w-auto object-contain hover:scale-110 transition-transform duration-300"
-                />
+                <span className="text-lg font-semibold hover:scale-110 transition-transform duration-300">
+                  {company}
+                </span>
               </div>
             ))}
           </div>
