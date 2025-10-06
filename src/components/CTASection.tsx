@@ -32,16 +32,19 @@ const CTASection = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button variant="hero" size="lg" asChild className="group">
-                <a href="https://calendly.com/hamzamaqsood334/30min" target="_blank" rel="noopener noreferrer">
+                <a href="https://calendly.com/hamza-gtmaccelerators" target="_blank" rel="noopener noreferrer">
                   Book Strategy Session
                   <Calendar className="ml-2 w-5 h-5 group-hover:scale-110 transition-transform" />
                 </a>
               </Button>
-              <Button variant="outline" size="lg" asChild className="border-primary/20 hover:bg-primary/10">
-                <a href="/services" target="_blank" rel="noopener noreferrer">
-                  View Our Services
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </a>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-primary/20 hover:bg-primary/10"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Contact Us
+                <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </div>
             
@@ -76,7 +79,7 @@ const CTASection = () => {
             </div>
           </div>
           
-          <div className="text-center space-y-4 cursor-pointer" onClick={() => window.open('https://calendly.com/hamzamaqsood334/30min', '_blank')}>
+          <div className="text-center space-y-4 cursor-pointer" onClick={() => window.open('https://calendly.com/hamza-gtmaccelerators', '_blank')}>
             <div className="p-4 bg-primary/10 rounded-xl w-fit mx-auto">
               <Calendar className="w-6 h-6 text-primary" />
             </div>
@@ -87,7 +90,7 @@ const CTASection = () => {
             </div>
           </div>
           
-          <div className="text-center space-y-4 cursor-pointer" onClick={() => window.open('https://calendly.com/hamzamaqsood334/30min', '_blank')}>
+          <div className="text-center space-y-4 cursor-pointer" onClick={() => window.open('https://calendly.com/hamza-gtmaccelerators', '_blank')}>
             <div className="p-4 bg-primary/10 rounded-xl w-fit mx-auto">
               <MessageSquare className="w-6 h-6 text-primary" />
             </div>
