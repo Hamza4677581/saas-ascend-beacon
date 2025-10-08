@@ -1,25 +1,21 @@
 const TrustedBySection = () => {
   const trustedCompanies = [
-    // VC-backed PortCos
     "Y Combinator Portfolio",
     "Thoma Bravo Portfolio",
     "General Catalyst Portfolio",
     "Accel Portfolio",
-    // Tech & SaaS Enterprises
-    "Salesforce",
-    "HubSpot",
-    "Microsoft",
-    "Oracle",
-    "SAP",
-    "Adobe",
-    "ServiceNow",
-    "Workday",
-    "Snowflake",
-    "Atlassian",
-    "Zoom",
-    "Slack",
-    "Dropbox",
-    "Box",
+    "Sequoia Portfolio",
+    "Andreessen Horowitz Portfolio",
+    "Kleiner Perkins Portfolio",
+    "Greylock Portfolio",
+    "Lightspeed Portfolio",
+    "Benchmark Portfolio",
+    "Index Ventures Portfolio",
+    "NEA Portfolio",
+    "Bessemer Portfolio",
+    "IVP Portfolio",
+    "Insight Partners Portfolio",
+    "Tiger Global Portfolio",
   ];
 
   return (
@@ -27,7 +23,7 @@ const TrustedBySection = () => {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-8">
           <p className="text-sm text-muted-foreground font-medium">
-            Trusted by PortCo's and Enterprises
+            Trusted by PortCo's of leading VC firms and some enterprises
           </p>
         </div>
         
