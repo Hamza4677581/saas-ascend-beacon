@@ -6,7 +6,6 @@ import ServicesSection from "@/components/ServicesSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import ComparisonSection from "@/components/ComparisonSection";
 import CTASection from "@/components/CTASection";
-import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -279,7 +278,6 @@ const Index = () => {
       </section>
       
       <CTASection />
-      <ContactForm />
       <Footer />
     </div>
   );

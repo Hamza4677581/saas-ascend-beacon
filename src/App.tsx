@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import DoneForYouOutbound from "./pages/services/DoneForYouOutbound";
 import ClayPlaybooks from "./pages/services/ClayPlaybooks";
 import GTMRevOpsEngineering from "./pages/services/GTMRevOpsEngineering";
@@ -25,6 +26,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/services/done-for-you-outbound" element={<DoneForYouOutbound />} />
           <Route path="/services/clay-playbooks" element={<ClayPlaybooks />} />
           <Route path="/services/gtm-revops-engineering" element={<GTMRevOpsEngineering />} />
