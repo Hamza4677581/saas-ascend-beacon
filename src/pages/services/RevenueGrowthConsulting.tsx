@@ -1,11 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { TrendingUp, Target, Users, BarChart3, Zap, ArrowRight } from "lucide-react";
 
 const RevenueGrowthConsulting = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Header />
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-background via-primary/5 to-background">
         <div className="container mx-auto px-6 lg:px-8">
@@ -230,6 +233,8 @@ const RevenueGrowthConsulting = () => {
           </Button>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };
