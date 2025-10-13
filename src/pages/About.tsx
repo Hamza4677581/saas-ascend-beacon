@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import asherPhoto from "@/assets/asher-azad.jpg";
 import { 
   ArrowRight, 
   Linkedin, 
@@ -113,7 +114,7 @@ const About = () => {
               <div className="relative order-2 lg:order-1">
                 <div className="relative rounded-2xl overflow-hidden shadow-glow">
                   <img 
-                    src="/src/assets/asher-azad.jpg" 
+                    src={asherPhoto} 
                     alt="Asher Azad - Technology Domain Expert" 
                     className="w-full h-auto object-cover"
                   />
