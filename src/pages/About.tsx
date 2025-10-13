@@ -144,15 +144,15 @@ const About = () => {
                   <h2 className="text-4xl md:text-6xl font-bold leading-tight">
                     Asher Azad
                     <span className="block bg-gradient-primary bg-clip-text text-transparent text-2xl md:text-3xl mt-2">
-                      Cloud Architecture | DevOps | Enterprise Systems
+                      Cloud Architecture | AI | DevOps
                     </span>
                   </h2>
                   
                   <p className="text-xl text-muted-foreground">
                     With 17 years of experience in the technology domain, Asher brings deep expertise in cloud 
-                    infrastructure, DevOps practices, and enterprise system architecture. He has architected and 
-                    scaled mission-critical systems for Fortune 500 companies and high-growth startups, ensuring 
-                    robust, scalable, and secure technology foundations.
+                    infrastructure, AI integration, and DevOps practices. He has developed enterprise-grade products 
+                    and architected mission-critical systems for Fortune 500 companies and high-growth startups, ensuring 
+                    robust, scalable, and secure technology foundations that power next-generation business solutions.
                   </p>
                 </div>
 
