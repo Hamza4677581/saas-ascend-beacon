@@ -29,7 +29,7 @@ const About = () => {
               <div className="space-y-8">
                 <div className="space-y-6">
                   <Badge variant="outline" className="border-primary/20 text-primary">
-                    Meet the Founder
+                    Meet the Founders
                   </Badge>
                   
                   <h1 className="text-4xl md:text-6xl font-bold leading-tight">
@@ -96,6 +96,75 @@ const About = () => {
                       <div className="text-lg font-bold">Million Dollar</div>
                       <div className="text-sm text-muted-foreground">MRR Achieved</div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Co-Founder Section - Asher Azad */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Left - Photo */}
+              <div className="relative order-2 lg:order-1">
+                <div className="relative rounded-2xl overflow-hidden shadow-glow">
+                  <img 
+                    src="/src/assets/asher-azad.jpg" 
+                    alt="Asher Azad - Technology Domain Expert" 
+                    className="w-full h-auto object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
+                </div>
+                
+                {/* Floating Achievement Card */}
+                <div className="absolute -bottom-6 -right-6 bg-gradient-card border border-primary/20 rounded-xl p-6 shadow-card backdrop-blur-sm">
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 bg-primary/20 rounded-lg">
+                      <Building className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <div className="text-lg font-bold">17 Years</div>
+                      <div className="text-sm text-muted-foreground">Tech Expertise</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Content */}
+              <div className="space-y-8 order-1 lg:order-2">
+                <div className="space-y-6">
+                  <Badge variant="outline" className="border-primary/20 text-primary">
+                    Co-Founder
+                  </Badge>
+                  
+                  <h2 className="text-4xl md:text-6xl font-bold leading-tight">
+                    Asher Azad
+                    <span className="block bg-gradient-primary bg-clip-text text-transparent text-2xl md:text-3xl mt-2">
+                      Cloud Architecture | DevOps | Enterprise Systems
+                    </span>
+                  </h2>
+                  
+                  <p className="text-xl text-muted-foreground">
+                    With 17 years of experience in the technology domain, Asher brings deep expertise in cloud 
+                    infrastructure, DevOps practices, and enterprise system architecture. He has architected and 
+                    scaled mission-critical systems for Fortune 500 companies and high-growth startups, ensuring 
+                    robust, scalable, and secure technology foundations.
+                  </p>
+                </div>
+
+                {/* Key Stats */}
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center p-4 bg-gradient-card rounded-lg border border-primary/10">
+                    <div className="text-3xl font-bold text-primary mb-1">17+</div>
+                    <div className="text-sm text-muted-foreground">Years Experience</div>
+                  </div>
+                  <div className="text-center p-4 bg-gradient-card rounded-lg border border-primary/10">
+                    <div className="text-3xl font-bold text-primary mb-1">100+</div>
+                    <div className="text-sm text-muted-foreground">Systems Architected</div>
                   </div>
                 </div>
               </div>
