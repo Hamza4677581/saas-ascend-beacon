@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { 
   NavigationMenu,
@@ -7,7 +8,14 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { ChevronDown } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { ChevronDown, Menu, X } from "lucide-react";
 
 const services = [
   { name: "Done-for-You Multi-Channel Outbound", href: "/services/done-for-you-outbound" },
@@ -26,12 +34,14 @@ const scrollToSection = (sectionId: string) => {
 };
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-primary/10">
-      <div className="container mx-auto px-6 lg:px-8">
+      <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+          <a href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
             <img 
               src="/lovable-uploads/130cdfb4-5ad5-49e7-9336-8ec96fb873f1.png" 
               alt="GTM Accelerators Logo" 
@@ -43,7 +53,7 @@ const Header = () => {
             </div>
           </a>
 
-          {/* Navigation */}
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <NavigationMenu>
               <NavigationMenuList>
@@ -52,7 +62,7 @@ const Header = () => {
                     Services <ChevronDown className="ml-1 h-4 w-4" />
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className="w-96 p-4">
+                    <div className="w-96 p-4 bg-background">
                       <div className="grid gap-3">
                         {services.map((service) => (
                           <NavigationMenuLink key={service.name} asChild>
@@ -94,12 +104,89 @@ const Header = () => {
             </button>
           </nav>
 
-          {/* CTA Button */}
-          <Button variant="hero" size="sm" asChild>
+          {/* Desktop CTA Button */}
+          <Button variant="hero" size="sm" asChild className="hidden md:inline-flex">
             <a href="https://calendly.com/hamzamaqsood334/30min" target="_blank" rel="noopener noreferrer">
               Book Call
             </a>
           </Button>
+
+          {/* Mobile Menu Button */}
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="md:hidden">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Toggle menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetHeader>
+                <SheetTitle>Menu</SheetTitle>
+              </SheetHeader>
+              <nav className="flex flex-col space-y-4 mt-8">
+                {/* Services Dropdown for Mobile */}
+                <div className="flex flex-col space-y-2">
+                  <span className="font-semibold text-foreground">Services</span>
+                  <div className="flex flex-col space-y-2 pl-4">
+                    {services.map((service) => (
+                      <a
+                        key={service.name}
+                        href={service.href}
+                        onClick={() => setIsOpen(false)}
+                        className="text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
+                      >
+                        {service.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+                
+                <a 
+                  href="/about" 
+                  onClick={() => setIsOpen(false)}
+                  className="text-muted-foreground hover:text-foreground transition-colors py-2"
+                >
+                  About
+                </a>
+                
+                <a 
+                  href="/#benefits"
+                  onClick={() => {
+                    setIsOpen(false);
+                    setTimeout(() => scrollToSection('benefits'), 100);
+                  }}
+                  className="text-muted-foreground hover:text-foreground transition-colors py-2"
+                >
+                  Benefits
+                </a>
+                
+                <a 
+                  href="/case-studies"
+                  onClick={() => setIsOpen(false)}
+                  className="text-muted-foreground hover:text-foreground transition-colors py-2"
+                >
+                  Case Studies
+                </a>
+                
+                <a 
+                  href="/#contact"
+                  onClick={() => {
+                    setIsOpen(false);
+                    setTimeout(() => scrollToSection('contact'), 100);
+                  }}
+                  className="text-muted-foreground hover:text-foreground transition-colors py-2"
+                >
+                  Contact
+                </a>
+
+                <Button variant="hero" size="lg" asChild className="mt-4">
+                  <a href="https://calendly.com/hamzamaqsood334/30min" target="_blank" rel="noopener noreferrer">
+                    Book Call
+                  </a>
+                </Button>
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>
