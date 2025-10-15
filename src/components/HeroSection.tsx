@@ -6,9 +6,9 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden pt-20 md:pt-24">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-background/40" />
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary-glow/10 rounded-full blur-3xl animate-pulse delay-1000" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-background/40 pointer-events-none" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse pointer-events-none" />
+      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary-glow/10 rounded-full blur-3xl animate-pulse delay-1000 pointer-events-none" />
       
       <div className="relative z-10 container mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
