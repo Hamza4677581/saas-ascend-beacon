@@ -42,8 +42,8 @@ const About = () => {
                   
                   <p className="text-xl text-muted-foreground">
                     Specialized in scaling B2B startups in the AI and Vertical SaaS space through intelligent automation 
-                    and revenue engineering. Transformed 50+ companies from early-stage to million-dollar ARR with proven 
-                    GTM systems and cutting-edge automation strategies that eliminate growth bottlenecks.
+                    and revenue engineering. As a trusted advisor to startups, I've transformed 50+ companies from early-stage 
+                    to million-dollar ARR with proven GTM systems and cutting-edge automation strategies that eliminate growth bottlenecks.
                   </p>
                 </div>
 
