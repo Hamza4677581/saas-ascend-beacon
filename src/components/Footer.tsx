@@ -3,7 +3,7 @@ import gtvaLogo from "@/assets/gtva-logo.png.asset.json";
 
 const Footer = () => {
   return (
-    <footer className="bg-black border-t border-border py-12">
+    <footer className="bg-background border-t border-border py-12">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo and Description */}
