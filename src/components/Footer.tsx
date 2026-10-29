@@ -1,22 +1,19 @@
 import { Mail, Phone, MessageSquare } from "lucide-react";
+import gtvaLogo from "@/assets/gtva-logo.png.asset.json";
 
 const Footer = () => {
   return (
-    <footer className="bg-black border-t border-border py-12">
+    <footer className="bg-background border-t border-border py-12">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="md:col-span-2 space-y-4">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center">
               <img 
-                src="/lovable-uploads/130cdfb4-5ad5-49e7-9336-8ec96fb873f1.png" 
-                alt="GTM Accelerators Logo" 
-                className="h-10 w-10"
+                src={gtvaLogo.url} 
+                alt="GTVA Consulting Logo" 
+                className="h-12 w-auto"
               />
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-foreground">GTM</span>
-                <span className="text-sm text-muted-foreground -mt-1">ACCELERATORS</span>
-              </div>
             </div>
             <p className="text-muted-foreground max-w-md">
               We accelerate SaaS growth with proven GTM strategies, from product-market fit to scalable revenue engines.
@@ -56,7 +53,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 GTM Accelerators. All rights reserved.
+            © 2026 GTVA Consulting. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
