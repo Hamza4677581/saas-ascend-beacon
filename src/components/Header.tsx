@@ -16,7 +16,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { ChevronDown, Menu, X } from "lucide-react";
-import gtvaLogo from "@/assets/gtva-logo.png.asset.json";
+import gtvaEmblem from "@/assets/gtva-emblem.png";
 
 const services = [
   { name: "Done-for-You Multi-Channel Outbound", href: "/services/done-for-you-outbound" },
@@ -42,12 +42,18 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
+          <a href="/" className="flex items-center gap-2.5 hover:opacity-90 transition-opacity">
             <img 
-              src={gtvaLogo.url} 
-              alt="GTVA Consulting Logo" 
-              className="h-9 w-auto"
+              src={gtvaEmblem} 
+              alt="GTVA Consulting" 
+              className="h-10 w-10 rounded-lg"
             />
+            <span className="flex flex-col leading-none">
+              <span className="text-2xl font-extrabold tracking-tight text-foreground">GTVA</span>
+              <span className="text-[10px] md:text-[11px] font-semibold tracking-[0.32em] text-primary mt-1">
+                CONSULTING
+              </span>
+            </span>
           </a>
 
           {/* Desktop Navigation */}

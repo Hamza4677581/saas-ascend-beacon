@@ -1,5 +1,5 @@
 import { Mail, Phone, MessageSquare } from "lucide-react";
-import gtvaLogo from "@/assets/gtva-logo.png.asset.json";
+import gtvaEmblem from "@/assets/gtva-emblem.png";
 
 const Footer = () => {
   return (
@@ -8,12 +8,18 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="md:col-span-2 space-y-4">
-            <div className="flex items-center">
+            <div className="flex items-center gap-3">
               <img 
-                src={gtvaLogo.url} 
-                alt="GTVA Consulting Logo" 
-                className="h-12 w-auto"
+                src={gtvaEmblem} 
+                alt="GTVA Consulting" 
+                className="h-14 w-14 rounded-xl"
               />
+              <span className="flex flex-col leading-none">
+                <span className="text-3xl font-extrabold tracking-tight text-foreground">GTVA</span>
+                <span className="text-xs font-semibold tracking-[0.32em] text-primary mt-1.5">
+                  CONSULTING
+                </span>
+              </span>
             </div>
             <p className="text-muted-foreground max-w-md">
               We accelerate SaaS growth with proven GTM strategies, from product-market fit to scalable revenue engines.
@@ -32,10 +38,13 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">Services</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="/services/done-for-you-multi-channel-outbound" className="hover:text-primary transition-colors">Multi-Channel Outbound</a></li>
-              <li><a href="/services/end-to-end-clay-playbooks" className="hover:text-primary transition-colors">Clay Playbooks</a></li>
+              <li><a href="/services/done-for-you-outbound" className="hover:text-primary transition-colors">Multi-Channel Outbound</a></li>
+              <li><a href="/services/clay-playbooks" className="hover:text-primary transition-colors">Clay Playbooks</a></li>
               <li><a href="/services/gtm-revops-engineering" className="hover:text-primary transition-colors">RevOps Engineering</a></li>
+              <li><a href="/services/c-level-network-activation" className="hover:text-primary transition-colors">C-Level Network Activation</a></li>
+              <li><a href="/services/ai-powered-sales-acceleration" className="hover:text-primary transition-colors">AI Sales Acceleration</a></li>
               <li><a href="/services/revenue-growth-consulting" className="hover:text-primary transition-colors">Growth Consulting</a></li>
+              <li><a href="/#services" className="hover:text-primary transition-colors">All Services</a></li>
             </ul>
           </div>
 
