@@ -10,7 +10,7 @@ const AIPoweredSalesAcceleration = () => {
     <div className="min-h-screen bg-background">
       <Header />
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-background via-primary/5 to-background">
+      <section className="pt-32 pb-16 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="mb-6">
@@ -183,7 +183,7 @@ const AIPoweredSalesAcceleration = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10">
+      <section className="py-24 bg-muted/30">
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Accelerate with AI?
