@@ -9,7 +9,7 @@ const CTASection = () => {
       <div className="container mx-auto px-6 lg:px-8">
         {/* Main CTA Card */}
         <Card className="relative overflow-hidden bg-gradient-hero border-primary/20 shadow-glow">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-background/20" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/40" />
           <div className="absolute top-4 right-4 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
           <div className="absolute bottom-4 left-4 w-24 h-24 bg-primary-glow/10 rounded-full blur-2xl" />
           

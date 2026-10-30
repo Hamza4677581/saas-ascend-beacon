@@ -22,7 +22,7 @@ const About = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-primary/10 via-background to-background">
+      <section className="pt-24 pb-16 bg-background">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="outline" className="border-primary/20 text-primary mb-6">
@@ -341,7 +341,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-primary/10 via-background to-background">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Scale Your SaaS?</h2>
