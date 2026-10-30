@@ -1,5 +1,5 @@
 import { Mail, Phone, MessageSquare } from "lucide-react";
-import gtvaLogo from "@/assets/gtva-logo.png.asset.json";
+import gtvaEmblem from "@/assets/gtva-emblem.png";
 
 const Footer = () => {
   return (
